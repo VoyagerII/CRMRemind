@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="92162797-2d1f-4475-9608-3c0b88f44913" name="Default" comment=" 创建项目">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/e-learning.iml" afterPath="$PROJECT_DIR$/e-learning.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" readonly="true" id="92162797-2d1f-4475-9608-3c0b88f44913" name="Default" comment=" 创建项目" />
     <ignored path="e-learning.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -431,7 +428,7 @@
       <workItem from="1432521497534" duration="155000" />
       <workItem from="1432521697128" duration="1326000" />
       <workItem from="1432523253822" duration="719000" />
-      <workItem from="1432523988045" duration="69000" />
+      <workItem from="1432523988045" duration="277000" />
     </task>
     <task id="LOCAL-00001" summary=" 创建项目">
       <created>1432522339380</created>
@@ -443,7 +440,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2269000" />
+    <option name="totallyTimeSpent" value="2477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
