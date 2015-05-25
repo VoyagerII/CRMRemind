@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.elearning.VideoNoteMapper" >
+  <resultMap id="BaseResultMap" type="com.elearning.entity.VideoNote" >
+    <id column="note_id" property="noteId" jdbcType="INTEGER" />
+    <result column="video_id" property="videoId" jdbcType="INTEGER" />
+    <result column="admin_id" property="adminId" jdbcType="INTEGER" />
+    <result column="note_public" property="notePublic" jdbcType="SMALLINT" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.elearning.entity.VideoNote" extends="BaseResultMap" >
+    <result column="note_content" property="noteContent" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    note_id, video_id, admin_id, note_public, create_time
+  </sql>
+  <sql id="Blob_Column_List" >
+    note_content
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from video_note
+    where note_id = #{noteId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from video_note
+    where note_id = #{noteId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.elearning.entity.VideoNote" >
+    insert into video_note (video_id, admin_id, note_public, 
+      create_time, note_content)
+    values (#{videoId,jdbcType=INTEGER}, #{adminId,jdbcType=INTEGER}, #{notePublic,jdbcType=SMALLINT}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{noteContent,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.elearning.entity.VideoNote" >
+    insert into video_note
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      video_id,
+      admin_id,
+      note_public,
+      create_time,
+      note_content,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{videoId,jdbcType=INTEGER},
+      #{adminId,jdbcType=INTEGER},
+      #{notePublic,jdbcType=SMALLINT},
+      #{createTime,jdbcType=TIMESTAMP},
+      #{noteContent,jdbcType=LONGVARCHAR},
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.elearning.entity.VideoNote" >
+    update video_note
+    <set >
+      <if test="videoId != null" >
+        video_id = #{videoId,jdbcType=INTEGER},
+      </if>
+      <if test="adminId != null" >
+        admin_id = #{adminId,jdbcType=INTEGER},
+      </if>
+      <if test="notePublic != null" >
+        note_public = #{notePublic,jdbcType=SMALLINT},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="noteContent != null" >
+        note_content = #{noteContent,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where note_id = #{noteId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.elearning.entity.VideoNote" >
+    update video_note
+    set video_id = #{videoId,jdbcType=INTEGER},
+      admin_id = #{adminId,jdbcType=INTEGER},
+      note_public = #{notePublic,jdbcType=SMALLINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      note_content = #{noteContent,jdbcType=LONGVARCHAR}
+    where note_id = #{noteId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.elearning.entity.VideoNote" >
+    update video_note
+    set video_id = #{videoId,jdbcType=INTEGER},
+      admin_id = #{adminId,jdbcType=INTEGER},
+      note_public = #{notePublic,jdbcType=SMALLINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where note_id = #{noteId,jdbcType=INTEGER}
+  </update>
+</mapper>

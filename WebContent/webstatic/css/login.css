@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+ body{font:12px/1.5 'MicroSoft YaHei', 'SimSun';}
+.login_bg_s50407{ background:#3d4e66;height:1000px;}
+.login_content_s50407{ width:1000px; height:1000px; margin:0 auto;background:#3d4e66;position:relative;}
+
+.login_logo_s50407{ margin-left:58px;padding-top:69px;}
+
+.login_middle_s50407{ background:url(../img/login_s50407.png) no-repeat; width:724px; height:786px;position:absolute;left:276px;top:214px;}
+
+.login_personal_s50407{ margin:147px 0 0 57px;}
+.login_text_s50407{ background:#FFF; width:323px; height:34px; padding-left:10px;border:1px #dddddd solid; color:#cccccc;line-height:34px;}
+
+.login_personal_s50407 ul li{ margin:5px 0;}
+.login_personal_s50407 span{ color:#ff6c00;}
+
+.login_text_yzm_s50407{background:#FFF; width:119px; height:34px; padding-left:10px;border:1px #dddddd solid; color:#cccccc; line-height:34px;}
+
+.login_personal_yam_s50407 ul{ overflow:hidden;} 
+.login_personal_yam_s50407 ul li{ float:left; margin-right:5px;}
+.login_personal_yam_s50407 i{ color:#999; padding-top:20px; display:block;}
+
+.login_company_s50407{ width:724px; margin-top:117px;}
+.login_company_s50407 p{font-size:18px; color:#FFF;text-align:right; padding-right:30px;}

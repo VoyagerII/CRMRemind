@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.elearning.VideoLearningExtMapper" >
+
+
+    <!-- 根据AdminIdAndVideoId获取笔记-->
+    <select id="getVideoNoteByAdminIdAndVideoId" resultMap="com.elearning.VideoNoteMapper.BaseResultMap" parameterType="java.util.Map" >
+    	select  <include refid="com.elearning.VideoNoteMapper.Base_Column_List" />
+   	 	from video_note 
+   	 	where 1=1
+   	 	<if test="adminId != null and adminId > -1">
+         	 and  admin_id = #{adminId} 
+        </if>
+       		 OR note_public=1
+        <if test="videoId != null and videoId > -1">
+        	 and  video_id = #{videoId} 
+        </if>
+       	 	order by create_time
+        <if test="limit != null and limit > 0">
+            LIMIT #{limit} OFFSET #{offset}
+        </if>
+    </select>
+    
+	<select id="getSubjectByAdminIdCount" resultType="int" parameterType="java.util.Map" >
+    	select count(*)
+   	 	from subjects s
+   	 	where 1=1
+   	 	<if test="adminId != null and adminId > -1">
+            and s.admin_id = #{adminId}
+        </if>
+   	 		order by s.create_time
+    </select>
+    
+    <select id="getSubjectByAdminId" resultType="java.util.Map" parameterType="java.util.Map" >
+    	select s.subject_id
+   	 	from subjects s
+   	 	where 1=1
+   	 	<if test="adminId != null and adminId > -1">
+            and s.admin_id = #{adminId}
+        </if>
+   	 		order by s.create_time
+        <if test="limit != null and limit > 0">
+            LIMIT #{limit} OFFSET #{offset}
+        </if>
+    </select>
+</mapper>

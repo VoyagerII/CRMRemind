@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.elearning.SubjectsMapper" >
+  <resultMap id="BaseResultMap" type="com.elearning.entity.Subjects" >
+    <id column="subject_id" property="subjectId" jdbcType="INTEGER" />
+    <result column="admin_id" property="adminId" jdbcType="INTEGER" />
+    <result column="subject_name" property="subjectName" jdbcType="VARCHAR" />
+    <result column="subject_picture" property="subjectPicture" jdbcType="VARCHAR" />
+    <result column="subject_finsh" property="subjectFinsh" jdbcType="SMALLINT" />
+    <result column="last_video_id" property="lastVideoId" jdbcType="INTEGER" />
+    <result column="subject_score" property="subjectScore" jdbcType="DOUBLE" />
+    <result column="subject_play" property="subjectPlay" jdbcType="INTEGER" />
+    <result column="subject_status" property="subjectStatus" jdbcType="SMALLINT" />
+    <result column="last_time" property="lastTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="subject_public" property="subjectPublic" jdbcType="SMALLINT" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.elearning.entity.Subjects" extends="BaseResultMap" >
+    <result column="subject_desc" property="subjectDesc" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    subject_id, admin_id, subject_name, subject_picture, subject_finsh, last_video_id, 
+    subject_score, subject_play, subject_status, last_time, create_time, subject_public
+  </sql>
+  <sql id="Blob_Column_List" >
+    subject_desc
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from subjects
+    where subject_id = #{subjectId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from subjects
+    where subject_id = #{subjectId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.elearning.entity.Subjects" useGeneratedKeys="true" keyProperty="subjectId" >
+    insert into subjects (admin_id, subject_name, subject_picture, 
+      subject_finsh, last_video_id, subject_score, 
+      subject_play, subject_status, last_time, 
+      create_time, subject_public, subject_desc
+      )
+    values (#{adminId,jdbcType=INTEGER}, #{subjectName,jdbcType=VARCHAR}, #{subjectPicture,jdbcType=VARCHAR}, 
+      #{subjectFinsh,jdbcType=SMALLINT}, #{lastVideoId,jdbcType=INTEGER}, #{subjectScore,jdbcType=DOUBLE}, 
+      #{subjectPlay,jdbcType=INTEGER}, #{subjectStatus,jdbcType=SMALLINT}, #{lastTime,jdbcType=TIMESTAMP}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{subjectPublic,jdbcType=SMALLINT}, #{subjectDesc,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.elearning.entity.Subjects" useGeneratedKeys="true" keyProperty="subjectId" >
+    insert into subjects
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      admin_id,
+      subject_name,
+      subject_picture,
+      subject_finsh,
+      last_video_id,
+      subject_score,
+      subject_play,
+      subject_status,
+      last_time,
+      create_time,
+      subject_public,
+      subject_desc,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{adminId,jdbcType=INTEGER},
+      #{subjectName,jdbcType=VARCHAR},
+      #{subjectPicture,jdbcType=VARCHAR},
+      #{subjectFinsh,jdbcType=SMALLINT},
+      #{lastVideoId,jdbcType=INTEGER},
+      #{subjectScore,jdbcType=DOUBLE},
+      #{subjectPlay,jdbcType=INTEGER},
+      #{subjectStatus,jdbcType=SMALLINT},
+      #{lastTime,jdbcType=TIMESTAMP},
+      #{createTime,jdbcType=TIMESTAMP},
+      #{subjectPublic,jdbcType=SMALLINT},
+      #{subjectDesc,jdbcType=LONGVARCHAR},
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.elearning.entity.Subjects" >
+    update subjects
+    <set >
+      <if test="adminId != null" >
+        admin_id = #{adminId,jdbcType=INTEGER},
+      </if>
+      <if test="subjectName != null" >
+        subject_name = #{subjectName,jdbcType=VARCHAR},
+      </if>
+      <if test="subjectPicture != null" >
+        subject_picture = #{subjectPicture,jdbcType=VARCHAR},
+      </if>
+      <if test="subjectFinsh != null" >
+        subject_finsh = #{subjectFinsh,jdbcType=SMALLINT},
+      </if>
+      <if test="lastVideoId != null" >
+        last_video_id = #{lastVideoId,jdbcType=INTEGER},
+      </if>
+      <if test="subjectScore != null" >
+        subject_score = #{subjectScore,jdbcType=DOUBLE},
+      </if>
+      <if test="subjectPlay != null" >
+        subject_play = #{subjectPlay,jdbcType=INTEGER},
+      </if>
+      <if test="subjectStatus != null" >
+        subject_status = #{subjectStatus,jdbcType=SMALLINT},
+      </if>
+      <if test="lastTime != null" >
+        last_time = #{lastTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="subjectPublic != null" >
+        subject_public = #{subjectPublic,jdbcType=SMALLINT},
+      </if>
+      <if test="subjectDesc != null" >
+        subject_desc = #{subjectDesc,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where subject_id = #{subjectId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.elearning.entity.Subjects" >
+    update subjects
+    set admin_id = #{adminId,jdbcType=INTEGER},
+      subject_name = #{subjectName,jdbcType=VARCHAR},
+      subject_picture = #{subjectPicture,jdbcType=VARCHAR},
+      subject_finsh = #{subjectFinsh,jdbcType=SMALLINT},
+      last_video_id = #{lastVideoId,jdbcType=INTEGER},
+      subject_score = #{subjectScore,jdbcType=DOUBLE},
+      subject_play = #{subjectPlay,jdbcType=INTEGER},
+      subject_status = #{subjectStatus,jdbcType=SMALLINT},
+      last_time = #{lastTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      subject_public = #{subjectPublic,jdbcType=SMALLINT},
+      subject_desc = #{subjectDesc,jdbcType=LONGVARCHAR}
+    where subject_id = #{subjectId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.elearning.entity.Subjects" >
+    update subjects
+    set admin_id = #{adminId,jdbcType=INTEGER},
+      subject_name = #{subjectName,jdbcType=VARCHAR},
+      subject_picture = #{subjectPicture,jdbcType=VARCHAR},
+      subject_finsh = #{subjectFinsh,jdbcType=SMALLINT},
+      last_video_id = #{lastVideoId,jdbcType=INTEGER},
+      subject_score = #{subjectScore,jdbcType=DOUBLE},
+      subject_play = #{subjectPlay,jdbcType=INTEGER},
+      subject_status = #{subjectStatus,jdbcType=SMALLINT},
+      last_time = #{lastTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      subject_public = #{subjectPublic,jdbcType=SMALLINT}
+    where subject_id = #{subjectId,jdbcType=INTEGER}
+  </update>
+</mapper>

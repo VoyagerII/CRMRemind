@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.elearning.VideoHomeworkMapper" >
+  <resultMap id="BaseResultMap" type="com.elearning.entity.VideoHomework" >
+    <id column="homework_id" property="homeworkId" jdbcType="INTEGER" />
+    <result column="video_id" property="videoId" jdbcType="INTEGER" />
+    <result column="homework_required" property="homeworkRequired" jdbcType="SMALLINT" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.elearning.entity.VideoHomework" extends="BaseResultMap" >
+    <result column="homework_content" property="homeworkContent" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    homework_id, video_id, homework_required, create_time
+  </sql>
+  <sql id="Blob_Column_List" >
+    homework_content
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from video_homework
+    where homework_id = #{homeworkId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from video_homework
+    where homework_id = #{homeworkId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.elearning.entity.VideoHomework" >
+    insert into video_homework (video_id, homework_required, create_time, 
+      homework_content)
+    values (#{videoId,jdbcType=INTEGER}, #{homeworkRequired,jdbcType=SMALLINT}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{homeworkContent,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.elearning.entity.VideoHomework" >
+    insert into video_homework
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      video_id,
+      homework_required,
+      create_time,
+      homework_content,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{videoId,jdbcType=INTEGER},
+      #{homeworkRequired,jdbcType=SMALLINT},
+      #{createTime,jdbcType=TIMESTAMP},
+      #{homeworkContent,jdbcType=LONGVARCHAR},
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.elearning.entity.VideoHomework" >
+    update video_homework
+    <set >
+      <if test="videoId != null" >
+        video_id = #{videoId,jdbcType=INTEGER},
+      </if>
+      <if test="homeworkRequired != null" >
+        homework_required = #{homeworkRequired,jdbcType=SMALLINT},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="homeworkContent != null" >
+        homework_content = #{homeworkContent,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where homework_id = #{homeworkId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.elearning.entity.VideoHomework" >
+    update video_homework
+    set video_id = #{videoId,jdbcType=INTEGER},
+      homework_required = #{homeworkRequired,jdbcType=SMALLINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      homework_content = #{homeworkContent,jdbcType=LONGVARCHAR}
+    where homework_id = #{homeworkId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.elearning.entity.VideoHomework" >
+    update video_homework
+    set video_id = #{videoId,jdbcType=INTEGER},
+      homework_required = #{homeworkRequired,jdbcType=SMALLINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where homework_id = #{homeworkId,jdbcType=INTEGER}
+  </update>
+</mapper>

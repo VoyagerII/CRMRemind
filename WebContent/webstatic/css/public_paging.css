@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+.conntent_paging_list_g141166{ text-align:center;}
+.conntent_paging_list_g141166 li{display:inline;}
+.conntent_paging_list_g141166 li a{ display:inline-block; background:#e9e9e9; padding:5px 10px; color:#19b394; border:1px solid #ccc;}
+.conntent_paging_list_g141166 li a:hover{ background:#009875; border:none;padding:6px 11px; color:#fff;}
+.conntent_paging_list_g141166 li span{display:inline-block; background:#19b394; padding:6px 11px; color:#fff; cursor:pointer; color:#FFF;}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 测试上传 -->
+	<bean id="testupload" class="com.elearning.bean.UploadFileConfig">
+		<property name="ext" value="png,jpg" />
+		<property name="maxsize" value="10240000" />
+		<property name="uptype" value="testuploadpath" />
+		<property name="imgsrc" value="${testup_path}" />
+		<property name="httpurl" value="${uploadurl}" />
+	</bean>
+
+	<!-- 上传文件公共类 -->
+	<bean id="uploadfileutils" class="com.elearning.web.util.UploadFileUtils">
+		<property name="allowfilelist">
+			<map>
+				<entry key="testuploadpath">
+					<ref bean="testupload" />
+				</entry>
+			</map>
+		</property>
+	</bean>
+	<!-- 上传图片Action -->
+	<bean id="uploadActionMethodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+		<property name="mappings">
+			<props>
+				<!-- 上传图片 -->
+				<prop key="/file/upload.do">UploadFile</prop>
+				<prop key="/file/uploadcommon.do">UploadFileByUptype</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="uploadAction" class="com.elearning.action.UploadAction">
+		<property name="methodNameResolver">
+			<ref bean="uploadActionMethodNameResolver" />
+		</property>
+	</bean>
+
+</beans>

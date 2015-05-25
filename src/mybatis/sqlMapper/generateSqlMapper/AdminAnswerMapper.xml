@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.elearning.AdminAnswerMapper" >
+  <resultMap id="BaseResultMap" type="com.elearning.entity.AdminAnswer" >
+    <id column="answer_id" property="answerId" jdbcType="INTEGER" />
+    <result column="video_id" property="videoId" jdbcType="INTEGER" />
+    <result column="homework_id" property="homeworkId" jdbcType="INTEGER" />
+    <result column="admin_id" property="adminId" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.elearning.entity.AdminAnswer" extends="BaseResultMap" >
+    <result column="answer_content" property="answerContent" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    answer_id, video_id, homework_id, admin_id, create_time
+  </sql>
+  <sql id="Blob_Column_List" >
+    answer_content
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from admin_answer
+    where answer_id = #{answerId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from admin_answer
+    where answer_id = #{answerId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.elearning.entity.AdminAnswer" >
+    insert into admin_answer (video_id, homework_id, admin_id, 
+      create_time, answer_content)
+    values (#{videoId,jdbcType=INTEGER}, #{homeworkId,jdbcType=INTEGER}, #{adminId,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{answerContent,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.elearning.entity.AdminAnswer" >
+    insert into admin_answer
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      video_id,
+      homework_id,
+      admin_id,
+      create_time,
+      answer_content,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{videoId,jdbcType=INTEGER},
+      #{homeworkId,jdbcType=INTEGER},
+      #{adminId,jdbcType=INTEGER},
+      #{createTime,jdbcType=TIMESTAMP},
+      #{answerContent,jdbcType=LONGVARCHAR},
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.elearning.entity.AdminAnswer" >
+    update admin_answer
+    <set >
+      <if test="videoId != null" >
+        video_id = #{videoId,jdbcType=INTEGER},
+      </if>
+      <if test="homeworkId != null" >
+        homework_id = #{homeworkId,jdbcType=INTEGER},
+      </if>
+      <if test="adminId != null" >
+        admin_id = #{adminId,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="answerContent != null" >
+        answer_content = #{answerContent,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where answer_id = #{answerId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.elearning.entity.AdminAnswer" >
+    update admin_answer
+    set video_id = #{videoId,jdbcType=INTEGER},
+      homework_id = #{homeworkId,jdbcType=INTEGER},
+      admin_id = #{adminId,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      answer_content = #{answerContent,jdbcType=LONGVARCHAR}
+    where answer_id = #{answerId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.elearning.entity.AdminAnswer" >
+    update admin_answer
+    set video_id = #{videoId,jdbcType=INTEGER},
+      homework_id = #{homeworkId,jdbcType=INTEGER},
+      admin_id = #{adminId,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where answer_id = #{answerId,jdbcType=INTEGER}
+  </update>
+</mapper>

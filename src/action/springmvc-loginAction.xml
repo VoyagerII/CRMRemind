@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 用户Action -->
+	<bean id="loginResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+		<property name="mappings">
+			<props>
+				<!-- 用户登录 -->
+				<prop key="/login/login.do">login</prop>
+				<!-- 注销 -->
+                <prop key="/login/loginout.do">loginOut</prop>
+				<!-- 检测用户名是否重复 -->
+				<prop key="/login/loginnamerepeated.do">loginnameRepeated</prop>
+				<!-- 修改用户信息 -->
+				<prop key="/login/changeadmin.do">changeAdmin</prop>
+				<!-- modelandviewDemo -->
+				<prop key="/login/modelandviewdemo.do">modelandviewDemo</prop>
+				<!-- ajaxpagesdemo -->
+				<prop key="/login/ajaxpagesdemo.do">ajaxpagesDemo</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="loginAction" class="com.elearning.action.LoginAction">
+		<property name="methodNameResolver">
+			<ref bean="loginResolver" />
+		</property>
+		<property name="ls">
+			<ref bean="loginService" />
+		</property>
+		<property name="ai">
+			<ref bean="captchaImageAction" />
+		</property>
+	</bean>
+</beans>
