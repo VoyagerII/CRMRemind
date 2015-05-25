@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 用户Action -->
+	<bean id="statisticsResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+		<property name="mappings">
+			<props>
+				<!-- 统计——左边栏导航显示统计数据 -->
+				<prop key="/statistics/getindexstatistics.do">getIndexStatistics</prop>
+				<!-- 统计——统计分析——部门课程统计top3 -->
+				<prop key="/statistics/getstatisticssubject.do">getStatisticsSubject</prop>
+				<!-- 统计——统计分析——部门课程统计图表 -->
+				<prop key="/statistics/getstatisticschart.do">getStatisticsChart</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="statisticsAction" class="com.elearning.action.StatisticsAction">
+		<property name="methodNameResolver">
+			<ref bean="statisticsResolver" />
+		</property>
+		<property name="statisticsService">
+			<ref bean="statisticsService" />
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 课程科目Action -->
+	<bean id="subjectMethodNameResolver"
+		class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+		<property name="mappings">
+			<props>
+				<!-- 课程科目 -->
+				<prop key="/subject/getsubjectbyadminid.do">getSubjectByAdminId</prop><!-- 通过adminId获得课程列表 -->
+				<prop key="/subject/addsubjectvideo.do">addSubjectVideo</prop><!-- 上传新课程和第一章视频 -->
+				<prop key="/subject/addvideobysubjectid.do">addVideoBySubjectId</prop><!-- 根据subjectId保存视频 -->
+				<prop key="/subject/getsubjectvideosbysubjectid.do">getSubjectVideosBySubjectId</prop><!-- 根据subjectId获得更新发布页面的数据 -->
+				<prop key="/subject/getvideobyvideoid.do">getVideoByVideoId</prop><!-- 根据videoId获得video -->
+				<prop key="/subject/getfinishedsubjects.do">getFinishedSubjects</prop><!-- 根据adminId获得已经完结的课程 -->
+			</props>
+		</property>
+	</bean>
+
+	<bean id="subjectAction" class="com.elearning.action.SubjectAction">
+		<property name="methodNameResolver">
+			<ref bean="subjectMethodNameResolver" />
+		</property>
+		<property name="subjectService">
+			<ref bean="subjectService" />
+		</property>
+	</bean>
+
+</beans>

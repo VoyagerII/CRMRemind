@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- Action -->
+	<bean id="videoLearningActionMethodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+		<property name="mappings">
+			<props>
+				<!-- 点击课程进入课程视频列表页面-->
+				<prop key="/videolearningaction/getvideosbyvideoId.do">getVideosByVideoId</prop>
+				<!-- 根据adminId查看所有课程-->
+				<prop key="/videolearningaction/getsubjectbyadminid.do">getSubjectByAdminId</prop>
+				<!-- 记一笔-->
+				<prop key="/videolearningaction/insertnewvideonote.do">insertNewVideoNote</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="videoLearningAction" class="com.elearning.action.VideoLearningAction">
+		<property name="methodNameResolver">
+			<ref bean="videoLearningActionMethodNameResolver" />
+		</property>
+		<property name="videoLearningService">
+			<ref bean="videoLearningService" />
+		</property>
+	</bean>
+	
+</beans>

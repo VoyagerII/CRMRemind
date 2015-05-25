@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- Action -->
+	<bean id="subjectLearningActionMethodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+		<property name="mappings">
+			<props>
+			
+				<!-- 获取正在学的课程 -->
+				<prop key="/subjectlearningaction/getallsubjectlearning.do">getAllSubjectLearning</prop>
+				<!-- 获取学完的课程 -->
+				<prop key="/subjectlearningaction/getallsubjectfinished.do">getAllSubjectFinished</prop>
+				<!-- 获取收藏的课程 -->
+				<prop key="/subjectlearningaction/getallsubjectfavorite.do">getAllSubjectFavorite</prop>
+				
+				<!-- 课程视频评分 -->
+				<prop key="/subjectlearningaction/scoresubject.do">scoreSubject</prop>
+				<!-- 收藏课程 、 取消收藏课程 -->
+				<prop key="/subjectlearningaction/changesubjectfavorite.do">changeSubjectFavorite</prop>
+				
+				<!-- 点击课程进入课程视频列表页面-->
+				<prop key="/subjectlearningaction/getallvideosbysubjectId.do">getAllVideosBySubjectId</prop>
+				
+				<!-- 笔记分页-->
+				<prop key="/subjectlearningaction/getvideonotepage.do">getVideoNotePage</prop>
+				
+			</props>
+		</property>
+	</bean>
+
+	<bean id="subjectLearningAction" class="com.elearning.action.SubjectLearningAction">
+		<property name="methodNameResolver">
+			<ref bean="subjectLearningActionMethodNameResolver" />
+		</property>
+		<property name="subjectLearningService">
+			<ref bean="subjectLearningService" />
+		</property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appconfig>
+	<database>
+		<master>
+			<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+			<url>jdbc:mysql://localhost:3306/testdb?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true&amp;autoReconnectForPools=true&amp;zeroDateTimeBehavior=convertToNull
+			</url>
+			<username>root</username>
+			<password>123456</password>
+		</master>
+	</database>
+
+	<!-- localhost -->
+	<domain>192.168.10.233</domain>
+	
+	<!-- 用户上传的内容,访问的URL -->
+	<uploadurl>http://192.168.10.233/</uploadurl>
+	
+	<!-- 测试上传 -->
+	<testup_path>D:\worktools\nginx-1.7.3\html</testup_path>
+</appconfig>

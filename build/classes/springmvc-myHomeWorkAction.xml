@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 我的作业Action -->
+	<bean id="myHomeWorkResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+		<property name="mappings">
+			<props>
+				<!-- 公共 -->
+				<!-- ~~根据上一级ID查找下一级的list内容(没实现)~~ -->
+				<prop key="/myhomework/videolistbysubjectid.do">getVideoListBySubjectId</prop>
+				<prop key="/myhomework/homeworklistbyvideoid.do">getHomeWorkListByVideoId</prop>
+				
+				<!-- ~~作业~~ -->
+				<!-- 查看我的作业概况··视频层信息 -->
+				<prop key="/myhomework/subjectlistbymyanswer.do">getSubjectListByMyAnswer</prop>
+				<!-- 查看某一个作业的详情··问题、答案list信息 -->
+				<prop key="/myhomework/answerbyvideoid.do">getAnswerByVideoId</prop>
+				<!-- 插入做题信息 -->
+				<prop key="/myhomework/getquestionbyvideoid.do">getQuestionByVideoId</prop>
+				<prop key="/myhomework/insertanswerby.do">insertAnswerByVideoIdHomeworkId</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="myHomeWorkAction" class="com.elearning.action.MyHomeWorkAction">
+		<property name="methodNameResolver">
+			<ref bean="myHomeWorkResolver" />
+		</property>
+		<property name="myHomeWorkService">
+			<ref bean="myHomeWorkService" />
+		</property>
+	</bean>
+</beans>

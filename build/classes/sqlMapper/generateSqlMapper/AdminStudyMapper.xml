@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.elearning.AdminStudyMapper" >
+  <resultMap id="BaseResultMap" type="com.elearning.entity.AdminStudy" >
+    <id column="study_id" property="studyId" jdbcType="INTEGER" />
+    <result column="subject_id" property="subjectId" jdbcType="INTEGER" />
+    <result column="video_id" property="videoId" jdbcType="INTEGER" />
+    <result column="admin_id" property="adminId" jdbcType="INTEGER" />
+    <result column="last_time" property="lastTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="homework_finish" property="homeworkFinish" jdbcType="SMALLINT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    study_id, subject_id, video_id, admin_id, last_time, create_time, homework_finish
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from admin_study
+    where study_id = #{studyId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from admin_study
+    where study_id = #{studyId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.elearning.entity.AdminStudy" >
+    insert into admin_study (subject_id, video_id, admin_id, 
+      last_time, create_time, homework_finish
+      )
+    values (#{subjectId,jdbcType=INTEGER}, #{videoId,jdbcType=INTEGER}, #{adminId,jdbcType=INTEGER}, 
+      #{lastTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}, #{homeworkFinish,jdbcType=SMALLINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.elearning.entity.AdminStudy" >
+    insert into admin_study
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      subject_id,
+      video_id,
+      admin_id,
+      last_time,
+      create_time,
+      homework_finish,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{subjectId,jdbcType=INTEGER},
+      #{videoId,jdbcType=INTEGER},
+      #{adminId,jdbcType=INTEGER},
+      #{lastTime,jdbcType=TIMESTAMP},
+      #{createTime,jdbcType=TIMESTAMP},
+      #{homeworkFinish,jdbcType=SMALLINT},
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.elearning.entity.AdminStudy" >
+    update admin_study
+    <set >
+      <if test="subjectId != null" >
+        subject_id = #{subjectId,jdbcType=INTEGER},
+      </if>
+      <if test="videoId != null" >
+        video_id = #{videoId,jdbcType=INTEGER},
+      </if>
+      <if test="adminId != null" >
+        admin_id = #{adminId,jdbcType=INTEGER},
+      </if>
+      <if test="lastTime != null" >
+        last_time = #{lastTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="homeworkFinish != null" >
+        homework_finish = #{homeworkFinish,jdbcType=SMALLINT},
+      </if>
+    </set>
+    where study_id = #{studyId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.elearning.entity.AdminStudy" >
+    update admin_study
+    set subject_id = #{subjectId,jdbcType=INTEGER},
+      video_id = #{videoId,jdbcType=INTEGER},
+      admin_id = #{adminId,jdbcType=INTEGER},
+      last_time = #{lastTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      homework_finish = #{homeworkFinish,jdbcType=SMALLINT}
+    where study_id = #{studyId,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 课程管理Action -->
+	<bean id="subjectManageMethodNameResolver"
+		class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+		<property name="mappings">
+			<props>
+				<!-- 课程管理 -->
+				<prop key="/subjectManage/getmanagesubjects.do">getManageSubjects</prop><!-- 根据条件获得subject -->
+				<prop key="/subjectManage/updatesubjectstatus.do">updateSubjectStatus</prop><!-- 修改subject的status -->
+			</props>
+		</property>
+	</bean>
+
+	<bean id="subjectManageAction" class="com.elearning.action.SubjectManageAction">
+		<property name="methodNameResolver">
+			<ref bean="subjectManageMethodNameResolver" />
+		</property>
+		<property name="subjectManageService">
+			<ref bean="subjectManageService" />
+		</property>
+	</bean>
+
+</beans>

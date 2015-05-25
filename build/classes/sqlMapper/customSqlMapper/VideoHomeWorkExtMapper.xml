@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="sqlMapper.customSqlMapper.VideoHomeWorkExtMapper.xml" >
+<!-- 自定义的resultmap -->
+	<!-- 作业概况···视频bean -->
+  <resultMap id="VideoBeanMap" type="com.elearning.bean.output.myHomeWork.bean.VideoBean" >
+  	<result column="video_id" property="videoId" jdbcType="INTEGER" />
+  	<result column="video_name" property="videoName" jdbcType="VARCHAR" />
+  	<result column="total" property="countNum" jdbcType="INTEGER" />
+  	<result column="last_time" property="lastTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+ 	<!-- 作业详情···答案bean -->
+  <resultMap id="AdminAnswerBeanMap" type="com.elearning.bean.output.myHomeWork.bean.AdminAnswerBean" >
+  	<result column="admin_name" property="adminName" jdbcType="VARCHAR" />
+  	<result column="admin_avatar" property="adminAvatar" jdbcType="VARCHAR" />
+  	<result column="video_id" property="videoId" jdbcType="INTEGER" />
+  	<result column="video_name" property="videoName" jdbcType="VARCHAR" />
+  	<result column="homework_id" property="homeworkId" jdbcType="INTEGER" />
+  	<result column="homework_required" property="homeworkRequired" jdbcType="SMALLINT" />
+  </resultMap>
+  <resultMap id="AdminAnswerBeanMapWithBLOBs" type="com.elearning.bean.output.myHomeWork.bean.AdminAnswerBean" extends="AdminAnswerBeanMap" >
+    <result column="video_desc" property="videoDesc" jdbcType="LONGVARCHAR" />
+    <result column="homework_content" property="homeworkContent" jdbcType="LONGVARCHAR" />
+    <result column="answer_content" property="answerContent" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <!--  
+  <resultMap id="BaseResultMap" type="com.elearning.bean.output.myHomeWork.SubjectVideHomeAnswer" >
+  	
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.elearning.bean.output.myHomeWork.SubjectVideHomeAnswer" extends="BaseResultMap" >
+    
+  </resultMap>
+  <sql id="Base_Column_List" >
+   
+  </sql>
+  <sql id="Blob_Column_List" >
+   
+  </sql>
+  -->
+<!-- 自定义的sql字段 --> 
+  
+  <!-- 自定义的sql语句 -->
+  <!-- 查询作业的视频列表gq -->
+  <select id="getSubjectListCount" resultType="int" parameterType="java.util.Map">
+  	select COUNT(DISTINCT d_p.video_id)
+	FROM 
+	(
+		SELECT
+			a.video_id,
+			v.video_name,
+			(COUNT(a.video_id)) AS total,
+			a_s.last_time
+		FROM
+			admin_answer a
+		LEFT JOIN video v ON a.video_id = v.video_id
+		LEFT JOIN admin_study a_s ON a.video_id = a_s.video_id  AND a.admin_id= a_s.admin_id
+		WHERE
+			1 = 1
+	<if test="adminId != null and adminId > -1"> 
+		AND a.admin_id = #{adminId}
+	</if>
+		AND a_s.homework_finish = 1
+		GROUP BY a.video_id
+		ORDER BY a.create_time
+	) d_p
+  </select>
+  <select id="getSubjectList" resultMap="VideoBeanMap" parameterType="java.util.Map">
+  	SELECT
+		a.video_id,
+		v.video_name,
+		(COUNT(a.video_id)) AS total,
+		a_s.last_time
+	FROM
+		admin_answer a
+	LEFT JOIN video v ON a.video_id = v.video_id
+	LEFT JOIN admin_study a_s ON a.video_id = a_s.video_id  AND a.admin_id= a_s.admin_id
+	WHERE
+		1 = 1
+	<if test="adminId != null and adminId > -1"> 
+		AND a.admin_id = #{adminId}
+	</if>
+		AND a_s.homework_finish = 1
+		GROUP BY a.video_id
+		ORDER BY a.create_time
+	<if test="limit != null and limit > 0">
+            LIMIT #{limit} OFFSET #{offset}
+    </if>
+  </select>
+  
+  <!-- 查询作业详情By视频ID -->
+  <select id="getAnswerByVideoId" resultMap="AdminAnswerBeanMapWithBLOBs" parameterType="java.util.Map">
+  	select
+		a.admin_name,a.admin_avatar,v_h.homework_id,
+		v.video_id,v.video_name,v.video_desc,v_h.homework_content,a_a.answer_content
+	from 
+		video_homework v_h
+	LEFT JOIN admin_answer a_a ON v_h.homework_id = a_a.homework_id AND v_h.video_id = a_a.video_id
+	LEFT JOIN video v ON v_h.video_id = v.video_id
+	LEFT JOIN subjects s ON v.subject_id = s.subject_id
+	LEFT JOIN admin a ON v.video_admin = a.admin_id
+	WHERE 
+		1 =1  
+	<if test="adminId != null and adminId > -1"> 
+		AND a_a.admin_id = #{adminId}
+	</if>
+	<if test="videoId != null and videoId > -1"> 
+		AND v_h.video_id = #{videoId}
+	</if>
+	ORDER BY a_a.create_time
+  </select>
+  
+  <!--根据video_id去查询该视频下好多作业 -->
+  <select id="getQuestionByVideoId" resultMap="AdminAnswerBeanMapWithBLOBs" parameterType="java.util.Map">
+  	select
+		a.admin_name,a.admin_avatar,v_h.homework_id,v_h.homework_required,
+		v.video_id,v.video_name,v.video_desc,
+		v_h.homework_content
+	from 
+		video_homework v_h
+	LEFT JOIN video v ON v_h.video_id = v.video_id
+	LEFT JOIN subjects s ON v.subject_id = s.subject_id
+	LEFT JOIN admin a ON v.video_admin = a.admin_id
+	WHERE 
+		1 =1  
+	<if test="videoId != null and videoId > -1"> 
+		AND v_h.video_id = #{videoId}
+	</if>
+	ORDER BY v_h.create_time
+  </select>
+  <!-- 更新作业最后修改状态·····时间，以及是否做了 -->
+  <update id="updateAdminStudyByVideoIdAdminId" parameterType="java.util.Map" >
+    update admin_study
+    <set >
+      <if test="lastTime != null" >
+        last_time = #{lastTime},
+      </if>
+      <if test="homeworkFinish != null" >
+        homework_finish = #{homeworkFinish},
+      </if>
+    </set>
+    where 1 = 1
+    <if test="videoId != null and videoId > -1"> 
+		AND video_id = #{videoId}
+	</if>
+	<if test="adminId != null and adminId > -1"> 
+		AND admin_id = #{adminId}
+	</if>
+  </update>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- 查询视频列表By课程ID -->
+  <select id="getVideoListBySubjectIdCount" resultType="int" parameterType="java.util.Map">
+  	select 
+  		COUNT(*) as videoCount
+	FROM 
+		video v
+	where 1=1
+	<if test="subjectId != null and subjectId > -1"> 
+		AND v.subject_id = #{subjectId}
+	</if>
+  </select>
+  <select id="getVideoListBySubjectId" resultType="java.util.Map" parameterType="java.util.Map">
+  
+  </select>
+  
+  <!-- 查询作业列表By视频ID -->
+  <select id="getHomeWorkListByVideoIdCount" resultType="int" parameterType="java.util.Map">
+  
+  </select>
+  <select id="getHomeWorkListByVideoId" resultType="java.util.Map" parameterType="java.util.Map">
+  
+  </select>
+</mapper>

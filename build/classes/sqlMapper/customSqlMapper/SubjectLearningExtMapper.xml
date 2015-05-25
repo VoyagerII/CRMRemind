@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.elearning.SubjectLearningExtMapper" >
+
+	<resultMap id="BaseResultMap" type="com.elearning.bean.output.subjectLearning.SubjectLearningBean" >
+      <result column="subject_id" property="subjectId" jdbcType="INTEGER" />
+      <result column="admin_id" property="adminId" jdbcType="INTEGER" />
+      <result column="subject_picture" property="subjectPicture" jdbcType="VARCHAR" />
+      <result column="subject_name" property="subjectName" jdbcType="VARCHAR" />
+      <result column="video_name" property="videoName" jdbcType="VARCHAR" />
+      <result column="admin_name" property="adminName" jdbcType="VARCHAR" />
+      <result column="last_time" property="lastTime" jdbcType="TIMESTAMP" />
+      <result column="video_name_learning" property="videoNameLearning" jdbcType="VARCHAR" />
+      <result column="last_time_learning" property="lastTimeLearning" jdbcType="TIMESTAMP" />
+      <result column="subject_score" property="subjectScore" jdbcType="INTEGER" />
+      <result column="subject_play" property="subjectPlay" jdbcType="INTEGER" />
+      <result column="is_favorite" property="isFavorite" jdbcType="INTEGER" />
+ 	</resultMap>
+    <sql id="Base_Column_List" >
+      total,subject_id, admin_id,subject_picture, subject_name, video_name, admin_name, 
+      last_time, video_name_learning, last_time_learning, subject_score, subject_play,is_favorite
+    </sql>
+
+	<select id="getAllSubjectByAdminIdAndSubjectFinishCount" resultType="int" parameterType="java.util.Map" >
+    	select count(*)
+   	 	from courses c
+   	 	left join subjects s on s.subject_id = c.subject_id
+   	 	left join admin a on a.admin_id = s.admin_id
+   	 	left join admin_favorite a_f on a_f.subject_id = s.subject_id
+   	 	left join video v on v.subject_id = s.subject_id
+   	 	left join video vl on vl.subject_id = s.subject_id
+   	 	left join admin_study a_s on a_s.subject_id = s.subject_id
+   	 	where s.subject_status = 1
+   	 	and a_s.study_id = (
+   	 		select a_s_2.study_id
+   	 		from admin_study a_s_2
+   	 		where a_s_2.subject_id = s.subject_id
+   	 		order by a_s_2.last_time desc
+   	 		limit 1
+   	 	)
+   	 	and vl.video_id = a_s.video_id
+   	 	and v.video_id = (
+   	 		select v2.video_id
+   	 		from video v2
+   	 		where v2.subject_id = s.subject_id
+   	 		order by v2.create_time desc
+   	 		limit 1
+   	 	)
+   	 	<if test="subjectFinish != null and subjectFinish > -1">
+           and c.subject_finish=#{subjectFinish}
+        </if>
+   	 	<if test="adminId != null and adminId > -1">
+           and c.admin_id = #{adminId}
+        </if>
+   	 	order by c.create_time
+   	 	
+    </select>
+    
+    <select id="getAllSubjectByAdminIdAndSubjectFinish" resultMap="com.elearning.SubjectLearningExtMapper.BaseResultMap" parameterType="java.util.Map" >
+    	select 
+      		count(*) AS total,s.subject_id,s.admin_id,s.subject_picture, s.subject_name, v.video_name, a.admin_name, 
+      		DATE_FORMAT(s.last_time, '%Y-%m-%d') AS last_time,
+     		vl.video_name AS video_name_learning,
+     		DATE_FORMAT(a_s.last_time, '%Y-%m-%d') AS last_time_learning,
+     		s.subject_score, s.subject_play,
+			IF(a_f.favorite_id is null ,1,0) AS is_favorite
+   	 	from courses c
+   	 	left join subjects s on s.subject_id = c.subject_id
+   	 	left join admin a on a.admin_id = s.admin_id
+   	 	left join admin_favorite a_f on a_f.subject_id = s.subject_id
+   	 	left join video v on v.subject_id = s.subject_id
+   	 	left join video vl on vl.subject_id = s.subject_id
+   	 	left join admin_study a_s on a_s.subject_id = s.subject_id
+   	 	where s.subject_status = 1
+   	 	and a_s.study_id = (
+   	 		select a_s_2.study_id
+   	 		from admin_study a_s_2
+   	 		where a_s_2.subject_id = s.subject_id
+   	 		order by a_s_2.last_time desc
+   	 		limit 1
+   	 	)
+   	 	and vl.video_id = a_s.video_id
+   	 	and v.video_id = (
+   	 		select v2.video_id
+   	 		from video v2
+   	 		where v2.subject_id = s.subject_id
+   	 		order by v2.create_time desc
+   	 		limit 1
+   	 	)
+   	 	<if test="subjectFinish != null and subjectFinish > -1">
+           and c.subject_finish=#{subjectFinish}
+        </if>
+   	 	<if test="adminId != null and adminId > -1">
+           and c.admin_id = #{adminId}
+        </if>
+   	 	order by c.create_time
+        <if test="limit != null and limit > 0">
+            LIMIT #{limit} OFFSET #{offset}
+        </if>
+    </select>
+  
+ 	<select id="getAllSubjectFavoriteCount" resultType="int" parameterType="java.util.Map" >
+	    select count(*)
+	    from admin_favorite a_f
+   	 	left join subjects s on s.subject_id = a_f.subject_id
+   	 	left join admin a on a.admin_id = s.admin_id
+   	 	left join video v on v.subject_id = s.subject_id
+   	 	left join video vl on vl.subject_id = s.subject_id
+   	 	left join admin_study a_s on a_s.subject_id = s.subject_id
+   	 	where s.subject_status = 1
+   	 	and a_s.study_id = (
+   	 		select a_s_2.study_id
+   	 		from admin_study a_s_2
+   	 		where a_s_2.subject_id = 1
+   	 		order by a_s_2.last_time desc
+   	 		limit 1
+   	 	)
+   	 	and vl.video_id = a_s.video_id
+   	 	and v.video_id = (
+   	 		select v2.video_id
+   	 		from video v2
+   	 		where v2.subject_id = s.subject_id
+   	 		order by v2.create_time desc
+   	 		limit 1
+   	 	)
+	    and a_f.admin_id = #{adminId}
+	    order by a_f.create_time
+    </select>
+  
+	<select id="getAllSubjectFavorite" resultMap="com.elearning.AdminFavoriteMapper.BaseResultMap" parameterType="java.util.Map" >
+	    select 
+	   		count(*) AS total,s.subject_id,s.admin_id,s.subject_picture, s.subject_name, v.video_name, a.admin_name, 
+      		DATE_FORMAT(s.last_time, '%Y-%m-%d') AS last_time,
+     		vl.video_name AS video_name_learning,
+     		DATE_FORMAT(a_s.last_time, '%Y-%m-%d') AS last_time_learning,
+     		s.subject_score, s.subject_play,
+			true AS is_favorite
+	    from admin_favorite a_f
+   	 	left join subjects s on s.subject_id = a_f.subject_id
+   	 	left join admin a on a.admin_id = s.admin_id
+   	 	left join video v on v.subject_id = s.subject_id
+   	 	left join video vl on vl.subject_id = s.subject_id
+   	 	left join admin_study a_s on a_s.subject_id = s.subject_id
+   	 	where s.subject_status = 1
+   	 	and a_s.study_id = (
+   	 		select a_s_2.study_id
+   	 		from admin_study a_s_2
+   	 		where a_s_2.subject_id = 1
+   	 		order by a_s_2.last_time desc
+   	 		limit 1
+   	 	)
+   	 	and vl.video_id = a_s.video_id
+   	 	and v.video_id = (
+   	 		select v2.video_id
+   	 		from video v2
+   	 		where v2.subject_id = s.subject_id
+   	 		order by v2.create_time desc
+   	 		limit 1
+   	 	)
+	    and a_f.admin_id = #{adminId}
+	    order by a_f.create_time
+        <if test="limit != null and limit > 0">
+            LIMIT #{limit} OFFSET #{offset}
+        </if>
+    </select>
+   
+    <!-- 获得最后学习的章节 -->
+	<select id="selectVideoLastLearning" resultMap="com.elearning.VideoMapper.BaseResultMap" parameterType="java.util.Map" >
+	       select 
+	   video.video_id, video.subject_id, video.video_name, video.video_admin, video.department_id, 
+	   video.video_public, video.video_chapter, 
+    video.video_resource, video.create_time, video.video_url, video.video_status
+	    from video 
+			LEFT JOIN admin_study a_s ON a_s.video_id = video.video_id
+	    where 1=1
+	     <if test="subjectId != null and subjectId > 0">
+          and  a_s.subject_id=#{subjectId}
+        </if>
+	    <if test="videoId != null and videoId > 0">
+           and video.video_id=#{videoId}
+        </if>	
+	    ORDER BY a_s.create_time DESC
+		limit 1
+  	</select>
+  	
+  	<!-- 获取某课程的分值rate -->
+  	<select id="getAllSubjectRateBySubjectId" resultType="java.util.Map" parameterType="java.lang.Integer" >
+	    select 
+		count(*) AS countnum,sum(rate_score) AS rateScore
+	    from subject_rate 
+	    where subject_id = #{subjectId}
+    </select>
+  
+  	<delete id="deleteAdminFavorite" parameterType="java.util.Map" >
+   		  delete from admin_favorite
+  		  where subject_id = #{subjectId,jdbcType=INTEGER}
+  		  and admin_id = #{adminId,jdbcType=INTEGER}
+  	</delete>
+  	
+    <!--  根据课程id获取最后更新章节 -->
+    <select id="getVideoIdListBySubjectId" resultMap="com.elearning.VideoMapper.BaseResultMap" parameterType="java.util.Map" >
+    	select  <include refid="com.elearning.VideoMapper.Base_Column_List" />
+   	 	from video v
+   	 	where 1=1
+   	 	<if test="subjectId != null and subjectId > -1">
+          and  v.subject_id = #{subjectId}
+        </if>
+   	 	order by v.create_time 
+    </select>
+    
+    <!-- 查询某课程下必填题 -->
+    <select id="getVideoHomeworkByVideoId" resultMap="com.elearning.VideoHomeworkMapper.BaseResultMap" parameterType="java.util.Map" >
+    	select  <include refid="com.elearning.VideoHomeworkMapper.Base_Column_List" />
+   	 	from video_homework v_h
+   	 	where 1=1
+   	 	<if test="videoId != null and videoId > -1">
+          and v_h.video_id = #{videoId}
+        </if>
+          and v_h.homework_required = 1
+    </select>
+    
+    <!-- 根据homeworkId获取用户答案 -->
+    <select id="selectAdminAnswerByHomeworkId" resultMap="com.elearning.AdminAnswerMapper.BaseResultMap" parameterType="java.lang.Integer" >
+    	select  <include refid="com.elearning.AdminAnswerMapper.Base_Column_List" />
+   	 	from admin_answer 
+   	 	where 1=1
+   	 	<if test="homeworkId != null and homeworkId > -1">
+          and  homework_id = #{homeworkId}
+        </if>
+    </select>
+    
+     <!-- 根据AdminIdAndVideoId获取笔记数目-->
+    <select id="getVideoNoteByAdminIdAndVideoIdCount" resultType="int" parameterType="java.util.Map" >
+    	select  count(*)
+   	 	from video_note 
+   	 	where 1=1
+   	 	<if test="adminId != null and adminId > -1">
+         	 and  admin_id = #{adminId} 
+        </if>
+       		 OR note_public=1
+        <if test="videoId != null and videoId > -1">
+        	 and  video_id = #{videoId} 
+        </if>
+       	 	order by create_time
+    </select>
+    
+    <!-- 根据AdminIdAndVideoId获取笔记-->
+    <select id="getVideoNoteByAdminIdAndVideoId" resultMap="com.elearning.VideoNoteMapper.BaseResultMap" parameterType="java.util.Map" >
+    	select  <include refid="com.elearning.VideoNoteMapper.Base_Column_List" />
+   	 	from video_note 
+   	 	where 1=1
+   	 	<if test="adminId != null and adminId > -1">
+         	 and  admin_id = #{adminId} 
+        </if>
+        <if test="adminId == null or adminId > -1">
+         	 and  admin_id = #{adminId} OR note_public=1 
+        </if>
+        <if test="videoId != null and videoId > -1">
+        	 and  video_id = #{videoId} 
+        </if>
+       	 	order by create_time
+        <if test="limit != null and limit > 0">
+            LIMIT #{limit} OFFSET #{offset}
+        </if>
+    </select>
+    
+</mapper>

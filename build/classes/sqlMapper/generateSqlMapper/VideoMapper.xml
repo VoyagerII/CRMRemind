@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.elearning.VideoMapper" >
+  <resultMap id="BaseResultMap" type="com.elearning.entity.Video" >
+    <id column="video_id" property="videoId" jdbcType="INTEGER" />
+    <result column="subject_id" property="subjectId" jdbcType="INTEGER" />
+    <result column="video_name" property="videoName" jdbcType="VARCHAR" />
+    <result column="video_admin" property="videoAdmin" jdbcType="INTEGER" />
+    <result column="department_id" property="departmentId" jdbcType="INTEGER" />
+    <result column="video_public" property="videoPublic" jdbcType="SMALLINT" />
+    <result column="video_chapter" property="videoChapter" jdbcType="INTEGER" />
+    <result column="video_resource" property="videoResource" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="video_url" property="videoUrl" jdbcType="VARCHAR" />
+    <result column="video_status" property="videoStatus" jdbcType="SMALLINT" />
+    <result column="video_new" property="videoNew" jdbcType="SMALLINT" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.elearning.entity.Video" extends="BaseResultMap" >
+    <result column="video_desc" property="videoDesc" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    video_id, subject_id, video_name, video_admin, department_id, video_public, video_chapter, 
+    video_resource, create_time, video_url, video_status, video_new
+  </sql>
+  <sql id="Blob_Column_List" >
+    video_desc
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from video
+    where video_id = #{videoId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from video
+    where video_id = #{videoId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.elearning.entity.Video" >
+    insert into video (subject_id, video_name, video_admin, 
+      department_id, video_public, video_chapter, 
+      video_resource, create_time, video_url, 
+      video_status, video_new, video_desc
+      )
+    values (#{subjectId,jdbcType=INTEGER}, #{videoName,jdbcType=VARCHAR}, #{videoAdmin,jdbcType=INTEGER}, 
+      #{departmentId,jdbcType=INTEGER}, #{videoPublic,jdbcType=SMALLINT}, #{videoChapter,jdbcType=INTEGER}, 
+      #{videoResource,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{videoUrl,jdbcType=VARCHAR}, 
+      #{videoStatus,jdbcType=SMALLINT}, #{videoNew,jdbcType=SMALLINT}, #{videoDesc,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.elearning.entity.Video" >
+    insert into video
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      subject_id,
+      video_name,
+      video_admin,
+      department_id,
+      video_public,
+      video_chapter,
+      video_resource,
+      create_time,
+      video_url,
+      video_status,
+      video_new,
+      video_desc,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{subjectId,jdbcType=INTEGER},
+      #{videoName,jdbcType=VARCHAR},
+      #{videoAdmin,jdbcType=INTEGER},
+      #{departmentId,jdbcType=INTEGER},
+      #{videoPublic,jdbcType=SMALLINT},
+      #{videoChapter,jdbcType=INTEGER},
+      #{videoResource,jdbcType=VARCHAR},
+      #{createTime,jdbcType=TIMESTAMP},
+      #{videoUrl,jdbcType=VARCHAR},
+      #{videoStatus,jdbcType=SMALLINT},
+      #{videoNew,jdbcType=SMALLINT},
+      #{videoDesc,jdbcType=LONGVARCHAR},
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.elearning.entity.Video" >
+    update video
+    <set >
+      <if test="subjectId != null" >
+        subject_id = #{subjectId,jdbcType=INTEGER},
+      </if>
+      <if test="videoName != null" >
+        video_name = #{videoName,jdbcType=VARCHAR},
+      </if>
+      <if test="videoAdmin != null" >
+        video_admin = #{videoAdmin,jdbcType=INTEGER},
+      </if>
+      <if test="departmentId != null" >
+        department_id = #{departmentId,jdbcType=INTEGER},
+      </if>
+      <if test="videoPublic != null" >
+        video_public = #{videoPublic,jdbcType=SMALLINT},
+      </if>
+      <if test="videoChapter != null" >
+        video_chapter = #{videoChapter,jdbcType=INTEGER},
+      </if>
+      <if test="videoResource != null" >
+        video_resource = #{videoResource,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="videoUrl != null" >
+        video_url = #{videoUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="videoStatus != null" >
+        video_status = #{videoStatus,jdbcType=SMALLINT},
+      </if>
+      <if test="videoNew != null" >
+        video_new = #{videoNew,jdbcType=SMALLINT},
+      </if>
+      <if test="videoDesc != null" >
+        video_desc = #{videoDesc,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where video_id = #{videoId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.elearning.entity.Video" >
+    update video
+    set subject_id = #{subjectId,jdbcType=INTEGER},
+      video_name = #{videoName,jdbcType=VARCHAR},
+      video_admin = #{videoAdmin,jdbcType=INTEGER},
+      department_id = #{departmentId,jdbcType=INTEGER},
+      video_public = #{videoPublic,jdbcType=SMALLINT},
+      video_chapter = #{videoChapter,jdbcType=INTEGER},
+      video_resource = #{videoResource,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      video_url = #{videoUrl,jdbcType=VARCHAR},
+      video_status = #{videoStatus,jdbcType=SMALLINT},
+      video_new = #{videoNew,jdbcType=SMALLINT},
+      video_desc = #{videoDesc,jdbcType=LONGVARCHAR}
+    where video_id = #{videoId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.elearning.entity.Video" >
+    update video
+    set subject_id = #{subjectId,jdbcType=INTEGER},
+      video_name = #{videoName,jdbcType=VARCHAR},
+      video_admin = #{videoAdmin,jdbcType=INTEGER},
+      department_id = #{departmentId,jdbcType=INTEGER},
+      video_public = #{videoPublic,jdbcType=SMALLINT},
+      video_chapter = #{videoChapter,jdbcType=INTEGER},
+      video_resource = #{videoResource,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      video_url = #{videoUrl,jdbcType=VARCHAR},
+      video_status = #{videoStatus,jdbcType=SMALLINT},
+      video_new = #{videoNew,jdbcType=SMALLINT}
+    where video_id = #{videoId,jdbcType=INTEGER}
+  </update>
+</mapper>

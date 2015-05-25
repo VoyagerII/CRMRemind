@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.elearning.statisticsActionMapper">
+	<resultMap id="StatisticsTop" type="com.elearning.bean.output.statistics.StatisticsSubjectUploadBean">
+		<result column="admin_id" property="adminId" jdbcType="INTEGER" />
+		<result column="admin_name" property="adminName" jdbcType="VARCHAR" />
+		<result column="admin_position" property="adminPicture" jdbcType="VARCHAR" />
+		<result column="department_name" property="departmentName" jdbcType="VARCHAR" />
+		<result column="subject_id" property="subjectId" jdbcType="VARCHAR" />
+		<result column="subject_name" property="subjectName" jdbcType="VARCHAR" />
+		<result column="subject_picture" property="subjectPicture" jdbcType="VARCHAR" />
+		<result column="time" property="disTime" jdbcType="VARCHAR" />
+		<result column="total" property="total" jdbcType="INTEGER" />
+	</resultMap>
+
+	<select id="getStudySubjectCount" resultType="java.lang.Integer" parameterType="java.util.Map">
+		SELECT
+		IFNULL(count(courses_id),0)
+		FROM
+		courses c WHERE admin_id = #{adminId}
+		AND subject_finish =#{subjectFinish}
+	</select>
+
+	<select id="getFavoriteSubjectCount" resultType="java.lang.Integer" parameterType="java.lang.Integer">
+		SELECT
+		IFNULL(count(af.subject_id),0) AS total
+		FROM
+		admin_favorite af WHERE admin_id = #{adminId}
+	</select>
+
+	<select id="getHomeworkCount" resultType="java.lang.Integer" parameterType="java.lang.Integer">
+		SELECT
+		IFNULL(count(DISTINCT aa.video_id),0) AS total
+		FROM
+		admin_answer aa WHERE aa.admin_id = #{adminId}
+	</select>
+
+	<select id="getUploadSubjectCount" resultType="java.lang.Integer" parameterType="java.util.Map">
+		SELECT
+		count(subjects.subject_id) AS total
+		FROM
+		subjects
+		WHERE
+		admin_id = #{adminId}
+		AND subject_finsh =
+		#{subjectFinish}
+	</select>
+
+	<select id="getStatisticsSubjectByTime" resultType="java.util.Map" parameterType="java.util.Map">
+		SELECT DISTINCT
+		DATE_FORMAT(s.create_time, '%Y-%m-%d') AS time,
+		COUNT(s.subject_id) AS total
+		FROM
+		subjects s
+		LEFT JOIN admin ON s.admin_id = admin.admin_id
+		WHERE
+		1=1
+		<if test="adminId != null and adminId >0 ">
+			AND s.admin_id = #{adminId}
+		</if>
+		<if test="departmentId != null and departmentId>0 ">
+			AND admin.department_id = #{departmentId}
+		</if>
+		<if test="subjectFinish != null and subjectFinish !='' ">
+			AND s.subject_finsh = #{subjectFinish}
+		</if>
+		<if test="lastTimebefor != null">
+         <![CDATA[  AND s.last_time > #{lastTimebefor} ]]>
+		</if>
+		<if test="lastTimeafter != null">
+         <![CDATA[  AND s.last_time < #{lastTimeafter} ]]>
+		</if>
+		<if test="createTimebefor != null">
+         <![CDATA[  AND s.create_time > #{createTimebefor} ]]>
+		</if>
+		<if test="lastTimeafter != null">
+         <![CDATA[  AND s.create_time < #{lastTimeafter} ]]>
+		</if>
+		GROUP BY
+		DATE_FORMAT(s.create_time, '%Y-%m-%d')
+	</select>
+	<select id="getStatisticsSubjectByPlay" resultType="java.util.Map" parameterType="java.util.Map">
+		SELECT
+		s.subject_id,
+		DATE_FORMAT(s.create_time, '%Y-%m-%d') AS time,
+		a.play AS total
+		FROM
+		subjects s
+		LEFT JOIN admin ON s.admin_id = admin.admin_id
+		LEFT JOIN (
+		SELECT DISTINCT
+		a_s.subject_id,
+		COUNT(a_s.study_id) AS play,
+		a_s.last_time
+		FROM
+		admin_study a_s
+		WHERE 1=1
+		<if test="lastTimebefor != null">
+	         <![CDATA[  AND a_s.last_time > #{lastTimebefor} ]]>
+		</if>
+		<if test="lastTimeafter != null">
+	         <![CDATA[  AND a_s.last_time < #{lastTimeafter} ]]>
+		</if>
+		) a ON s.subject_id = a.subject_id
+		WHERE 1=1
+		<if test="adminId != null and adminId >0 ">
+			AND s.admin_id = #{adminId}
+		</if>
+		<if test="departmentId != null and departmentId>0 ">
+			AND admin.department_id = #{departmentId}
+		</if>
+		<if test="subjectFinish != null">
+			AND s.subject_finsh = #{subjectFinish}
+		</if>
+		<if test="createTimebefor != null">
+         <![CDATA[  AND s.create_time > #{createTimebefor} ]]>
+		</if>
+		<if test="lastTimeafter != null">
+         <![CDATA[  AND s.create_time < #{lastTimeafter} ]]>
+		</if>
+		GROUP BY
+		DATE_FORMAT(s.create_time, '%Y-%m-%d')
+	</select>
+
+	<!-- 评分top3 -->
+	<select id="getStatisticsTopRate" resultMap="com.elearning.statisticsActionMapper.StatisticsTop" parameterType="java.util.Map">
+		SELECT
+		sr.subject_id,s.subject_name,s.subject_picture,IFNULL(SUM(sr.rate_score), 0) AS total
+		FROM
+		subject_rate sr
+		LEFT JOIN subjects s ON sr.subject_id = s.subject_id
+		LEFT JOIN admin a ON
+		sr.admin_id
+		=
+		a.admin_id
+		WHERE 1=1
+		<if test="departmentId != null and departmentId>0 ">
+			AND a.department_id = #{departmentId}
+		</if>
+		<if test="createTimebefor != null and createTimebefor!='' ">
+			AND <![CDATA[  sr.create_time>#{createTimebefor} AND sr.create_time<#{createTimeafter} ]]>
+		</if>
+		GROUP BY subject_id
+		ORDER BY total DESC
+		LIMIT 0,3
+	</select>
+
+	<!-- 热门top3 -->
+	<select id="getStatisticsTopSubject" resultMap="com.elearning.statisticsActionMapper.StatisticsTop" parameterType="java.util.Map">
+		SELECT
+		s.subject_id,s.subject_name,s.subject_picture,s.subject_play,IFNULL(COUNT(ast.video_id), 0) AS total
+		FROM
+		admin_study ast
+		LEFT JOIN subjects s ON ast.subject_id = s.subject_id
+		LEFT JOIN admin a ON
+		s.admin_id =
+		a.admin_id
+		WHERE 1=1
+		<if test="departmentId != null and departmentId>0 ">
+			AND a.department_id = #{departmentId}
+		</if>
+		<if test="createTimebefor != null and createTimebefor!='' ">
+			AND <![CDATA[  ast.create_time>#{createTimebefor} AND ast.create_time<#{createTimeafter} ]]>
+		</if>
+		GROUP BY ast.subject_id
+		ORDER BY total DESC
+		LIMIT 0,3
+	</select>
+
+	<!-- 发布人top3 -->
+	<select id="getStatisticsTopAdmin" resultMap="com.elearning.statisticsActionMapper.StatisticsTop" parameterType="java.util.Map">
+		SELECT
+		s.admin_id,a.admin_name,a.admin_position,d.department_name,IFNULL(COUNT(s.subject_id) , 0) as total
+		FROM
+		subjects s
+		LEFT JOIN admin a ON s.admin_id = a.admin_id
+		LEFT JOIN department d ON
+		a.department_id = d.department_id
+		WHERE 1=1
+		<if test="departmentId != null and departmentId>0 ">
+			AND a.department_id = #{departmentId}
+		</if>
+		<if test="createTimebefor != null and createTimebefor!='' ">
+			AND <![CDATA[  s.create_time>#{createTimebefor} AND s.create_time<#{createTimeafter} ]]>
+		</if>
+		GROUP BY s.admin_id
+		ORDER BY total DESC
+		LIMIT 0,3
+	</select>
+
+	<!-- 图表 新开课程，更新课程，完结课程 -->
+	<select id="getStatisticsSubjects" resultMap="com.elearning.statisticsActionMapper.StatisticsTop" parameterType="java.util.Map">
+		SELECT
+		IFNULL(COUNT(s.subject_id) , 0) as total,
+		<if test="createTimebefor != null and createTimebefor!='' ">
+			DATE_FORMAT(s.create_time, '%m-%d') AS time
+		</if>
+		<if test="lastTimebefor != null and lastTimebefor !='' ">
+			DATE_FORMAT(s.last_time, '%m-%d') AS time
+		</if>
+		FROM
+		`subjects` s
+		LEFT JOIN admin a ON s.admin_id = a.admin_id
+		LEFT JOIN department d ON
+		a.department_id = d.department_id
+		WHERE 1=1
+		<if test="departmentId != null and departmentId>0 ">
+			AND a.department_id = #{departmentId}
+		</if>
+		<if test="createTimebefor != null and createTimebefor!='' ">
+			AND <![CDATA[  s.create_time>#{createTimebefor} AND s.create_time<#{createTimeafter} ]]>
+		</if>
+		<if test="lastTimebefor != null and lastTimebefor!='' ">
+			AND <![CDATA[  s.last_time>#{lastTimebefor} AND s.last_time<#{lastTimeafter} ]]>
+		</if>
+		<if test="subjectFinish != null and subjectFinish !='' ">
+            AND s.subject_finsh =  #{subjectFinish}
+        </if>
+		GROUP BY
+		<if test="createTimebefor != null and createTimebefor!='' ">
+			DATE_FORMAT(s.create_time, '%m-%d')
+		</if>
+		<if test="lastTimebefor != null and lastTimebefor !='' ">
+			DATE_FORMAT(s.last_time, '%m-%d')
+		</if>
+	</select>
+
+	<!-- 浏览量统计 -->
+	<select id="getStatisticsPlay" resultMap="com.elearning.statisticsActionMapper.StatisticsTop" parameterType="java.util.Map">
+		SELECT
+		IFNULL(COUNT(ast.video_id),0)AS total ,DATE_FORMAT(ast.create_time , '%Y-%m-%d') AS time,s.subject_name
+		FROM
+		admin_study ast
+		LEFT JOIN subjects s ON ast.subject_id = s.subject_id
+		LEFT JOIN admin a ON s.admin_id = a.admin_id
+		LEFT JOIN department d ON
+		a.department_id = d.department_id
+		WHERE 1=1
+		<if test="departmentId != null and departmentId>0 ">
+			AND a.department_id = #{departmentId}
+		</if>
+		<if test="createTimebefor != null and createTimebefor!='' ">
+			AND <![CDATA[  ast.create_time>#{createTimebefor} AND ast.create_time<#{createTimeafter} ]]>
+		</if>
+		GROUP BY ast.subject_id
+	</select>
+
+</mapper>

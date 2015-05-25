@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean name="PropertyPlaceholderConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="properties" ref="configuration" />
+	</bean>
+
+	<!-- 运行环境配置 -->
+	<bean id="configuration" class="com.elearning.web.mybatis.ConfigBean">
+		<property name="configurations">
+			<list>
+				<!-- 本地测试配置文件 -->
+				<bean class="org.apache.commons.configuration.XMLConfiguration">
+					<constructor-arg type="java.net.URL" value="classpath:localhost.application.config.xml" />
+				</bean>
+
+				<!-- 测试环境配置文件 -->
+				<bean class="org.apache.commons.configuration.XMLConfiguration">
+					<constructor-arg type="java.net.URL" value="classpath:test.application.config.xml" />
+				</bean>
+
+				<!-- 生产环境配置文件 -->
+				<bean class="org.apache.commons.configuration.XMLConfiguration">
+					<constructor-arg type="java.net.URL" value="classpath:online.application.config.xml" />
+				</bean>
+				<!-- 空——3 -->
+				<bean class="org.apache.commons.configuration.XMLConfiguration">
+					<constructor-arg type="java.net.URL" value="classpath:cihongchang.application.config.xml" />
+				</bean>
+				<!-- 空——4 -->
+				<bean class="org.apache.commons.configuration.XMLConfiguration">
+				</bean>
+				<!-- dingdapeng ——5  -->
+				<bean class="org.apache.commons.configuration.XMLConfiguration">
+					<constructor-arg type="java.net.URL" value="classpath:dingdapeng.application.config.xml" />
+				</bean>
+				<!-- xinwenfeng -->
+				<bean class="org.apache.commons.configuration.XMLConfiguration">
+					<constructor-arg type="java.net.URL" value="classpath:xinwenfeng.application.config.xml" />
+				</bean>
+				<!-- xiaobai ——7 -->
+				<bean class="org.apache.commons.configuration.XMLConfiguration">
+					<constructor-arg type="java.net.URL" value="classpath:xiaobai.application.config.xml" />
+				</bean>
+				<!--——8 -->
+				<bean class="org.apache.commons.configuration.XMLConfiguration">
+					<constructor-arg type="java.net.URL" value="classpath:guoq.application.config.xml" />
+				</bean>
+			</list>
+		</property>
+
+		<!-- 可根据此参数获取应用在何种环境中运行：本地? 测试? 正式? -->
+		<property name="appEnv" value="userIndex" />
+	</bean>
+
+	<!-- Action Url映射 -->
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/login/*">loginAction</prop>
+				<prop key="/captchaImage.do">captchaImageAction</prop>
+				<prop key="/myhomework/*">myHomeWorkAction</prop>
+				<!-- 统计功能 -->
+				<prop key="/statistics/*">statisticsAction</prop>
+				<prop key="/subject/*">subjectAction</prop>
+				<!-- 课程操作（收藏、正在、完结） -->
+				<prop key="/subjectlearningaction/*">subjectLearningAction</prop>
+				<!-- 视频操作 -->
+				<prop key="/videolearningaction/*">videoLearningAction</prop>
+				<prop key="/subjectManage/*">subjectManageAction</prop>
+				<prop key="/file/upload*">uploadAction</prop>
+			</props>
+		</property>
+		<property name="interceptors">
+			<list>
+				<ref bean="IntercepetorCache" />
+			</list>
+		</property>
+	</bean>
+
+	<import resource="classpath:springmvc-*Action.xml" />
+
+	<!-- 用于持有ApplicationContext,可以使用SpringContextHolder.getBean('xxxx')的静态方法得到spring 
+		bean对象 -->
+	<bean class="com.elearning.web.applicationContext.ApplicationContextHolder"
+		lazy-init="false"></bean>
+
+</beans>

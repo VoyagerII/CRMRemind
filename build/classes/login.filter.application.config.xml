@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 登录拦截配置XML -->
+<loginFilterConfig>
+
+	<!-- 网站默认登录页 -->
+	<defaultLoginUrl>/pages/login.jsp</defaultLoginUrl>
+
+	<!-- 登录过滤 以下设定, 访问这些URL 必须是经过登录后才能访问 -->
+	<!-- 如果没登录, 过滤器, 自动跳转到登录页面, 让用户登录, * 必须放到末尾, 表示 模糊匹配 如果没有* , 表示精确匹配 -->
+	<loginUrl>
+
+
+	</loginUrl>
+
+</loginFilterConfig>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.elearning.CoursesMapper" >
+  <resultMap id="BaseResultMap" type="com.elearning.entity.Courses" >
+    <id column="courses_id" property="coursesId" jdbcType="INTEGER" />
+    <result column="admin_id" property="adminId" jdbcType="INTEGER" />
+    <result column="subject_id" property="subjectId" jdbcType="INTEGER" />
+    <result column="subject_finish" property="subjectFinish" jdbcType="SMALLINT" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    courses_id, admin_id, subject_id, subject_finish, create_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from courses
+    where courses_id = #{coursesId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from courses
+    where courses_id = #{coursesId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.elearning.entity.Courses" useGeneratedKeys="true" keyProperty="coursesId" >
+    insert into courses (admin_id, subject_id, subject_finish, 
+      create_time)
+    values (#{adminId,jdbcType=INTEGER}, #{subjectId,jdbcType=INTEGER}, #{subjectFinish,jdbcType=SMALLINT}, 
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.elearning.entity.Courses" useGeneratedKeys="true" keyProperty="coursesId" >
+    insert into courses
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      admin_id,
+      subject_id,
+      subject_finish,
+      create_time,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{adminId,jdbcType=INTEGER},
+      #{subjectId,jdbcType=INTEGER},
+      #{subjectFinish,jdbcType=SMALLINT},
+      #{createTime,jdbcType=TIMESTAMP},
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.elearning.entity.Courses" >
+    update courses
+    <set >
+      <if test="adminId != null" >
+        admin_id = #{adminId,jdbcType=INTEGER},
+      </if>
+      <if test="subjectId != null" >
+        subject_id = #{subjectId,jdbcType=INTEGER},
+      </if>
+      <if test="subjectFinish != null" >
+        subject_finish = #{subjectFinish,jdbcType=SMALLINT},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where courses_id = #{coursesId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.elearning.entity.Courses" >
+    update courses
+    set admin_id = #{adminId,jdbcType=INTEGER},
+      subject_id = #{subjectId,jdbcType=INTEGER},
+      subject_finish = #{subjectFinish,jdbcType=SMALLINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where courses_id = #{coursesId,jdbcType=INTEGER}
+  </update>
+</mapper>

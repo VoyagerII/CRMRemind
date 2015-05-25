@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="92162797-2d1f-4475-9608-3c0b88f44913" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/Filters.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/Tidy.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/activation-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/ant.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/antlr-2.7.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/aopalliance-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/arrow-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/arrow-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/asm-3.3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/asm-attrs-1.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/asm-commons-3.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/asm-tree-3.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/aspectjrt-1.6.12.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/aspectjweaver-1.6.12.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/axis-ant.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/axis.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/bccs-api-lib-1.1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/skin/whyGreen/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/bg2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/big_head_s50407.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/big_zwt_s50408.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/bjqzwt_s50416.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/buttons-disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/buttons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/c3p0-0.9.1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/cglib-2.2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/chosen-sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/circle_green_s50407.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/com.ibm.icu_52.1.0.v201404241930.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-attributes-api.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-attributes-compiler.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-beanutils-1.8.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-cli-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-codec-1.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-collections-3.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-configuration-1.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-dbcp-1.2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-dbutils-1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-digester3-3.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-discovery-0.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-fileupload-1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-httpclient-3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-io-2.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-jexl-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-lang.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-lang3-3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-logging-1.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-net-1.4.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-pool-1.5.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-validator.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/concurrent-1.3.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/core-renderer.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/crown_s50416.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/cxf-2.4.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/daosanjiao5416_03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/skin/datePicker.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/datedFileAppender-1.0.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/delete_s50416.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/derby.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/des.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/dom4j-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/dribble.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/ehcache-1.2.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/ejb3-persistence-1.0.2.GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/emayclient.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/images/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/ezmorph-1.0.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/fastjson-1.1.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/fckeditor-java-core-2.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/flexjson-2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/flute.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/forrst.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/freemarker-2.3.19.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/gson-1.7.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/guan_s50415.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/has_openly_s50413.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/head_1px_s50407.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/heart_gray_s50408.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/heart_red_s50408.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/home_head_s50407.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/homework_zwt_s50408.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/hrService.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/htmlcleaner-2.9.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/httpclient-4.1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/httpclient-cache-4.1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/httpcore-4.1.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/httpmime-4.1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/iText-2.0.8.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/layer/skin/default/icon_ext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/imageinfo-1.9.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/imap.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/skin/default/img.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/skin/whyGreen/img.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jackson-core-lgpl-1.5.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jackson-mapper-lgpl-1.5.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/java-unrar-0.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/java_memcached-release_2.6.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/javassist-3.4.GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.wsdl_1.5.1.v201012040544.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.xml.stream_1.0.1.v201004272200.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jaxen-1.1-beta-7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jaxrpc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jcaptcha-all-1.0-RC6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jcommon-1.0.17.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jdom-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jfreechart-1.0.14.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/js.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jsf-api.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jsf-impl.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/json-lib-2.2.2-jdk15.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jsoup-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jstl-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jta-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/junit-4.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/kaptcha-2.3.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/light.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-loading/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/log4j-1.2.16.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/login_s50407.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/magnifier_grey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/middle_1px_s50407.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/mybatis-3.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/mybatis-spring-1.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/mysql-connector-java-5.1.17-bin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/natural_paper.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/neethi-3.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/new_s50413.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/offline_s50416.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/ognl-3.0.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/open.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.bridge_1.6.0.v201011041432.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.css_1.6.0.v201011041432.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.dom.svg_1.6.0.v201011041432.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.dom_1.6.0.v201011041432.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.ext.awt_1.6.0.v201011041432.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.parser_1.6.0.v201011041432.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.pdf_1.6.0.v201105071520.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.svggen_1.6.0.v201011041432.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.transcoder_1.6.0.v201011041432.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.util.gui_1.6.0.v201011041432.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.util_1.6.0.v201011041432.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.batik.xml_1.6.0.v201011041432.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.commons.codec_1.3.0.v201101211617.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.commons.logging_1.0.4.v201101211617.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.commons.logging_1.1.1.v201101211721.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.poi_3.9.0.v201303080712.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.xerces_2.9.0.v201101211617.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.xml.resolver_1.2.0.v201005080400.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.apache.xml.serializer_2.7.1.v201005080400.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.birt.runtime_4.4.1.v20140916-1320.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.core.contenttype_3.4.200.v20140207-1251.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.core.expressions_3.4.600.v20140128-0851.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.core.filesystem_1.4.100.v20140514-1614.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.core.jobs_3.6.0.v20140424-0053.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.core.resources_3.9.1.v20140825-1431.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.core.runtime_3.10.0.v20140318-2214.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity.apache.derby.dbdefinition_1.0.2.v201107221459.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity.apache.derby_1.0.103.v201212070447.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity.console.profile_1.0.10.v201109250955.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity.db.generic_1.0.1.v201107221459.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity.dbdefinition.genericJDBC_1.0.2.v201310181001.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity.oda.consumer_3.2.6.v201403131814.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity.oda.design_3.3.6.v201403131814.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity.oda.flatfile_3.1.8.v201403010906.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity.oda.profile_3.2.9.v201403131814.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity.oda_3.4.3.v201405301249.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity.sqm.core_1.2.8.v201401230755.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.connectivity_1.2.11.v201401230755.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.hsqldb.dbdefinition_1.0.0.v201107221502.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.hsqldb_1.0.0.v201107221502.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.db2.luw.dbdefinition_1.0.7.v201405302027.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.db2.luw_1.0.3.v201401170830.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.informix.dbdefinition_1.0.4.v201107221502.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.informix_1.0.1.v201107221502.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition_1.0.1.v201201240505.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.msft.sqlserver_1.0.3.v201308161009.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.mysql.dbdefinition_1.0.4.v201109022331.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.mysql_1.0.4.v201212120617.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.oda.ws_1.2.6.v201403131825.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.oda.xml_1.2.5.v201403131825.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.oracle.dbdefinition_1.0.103.v201206010214.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.oracle_1.0.0.v201107221506.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.postgresql.dbdefinition_1.0.2.v201110070445.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.enablement.postgresql_1.1.1.v201205252207.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.modelbase.dbdefinition_1.0.2.v201107221519.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.modelbase.derby_1.0.0.v201107221519.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.modelbase.sql.query_1.1.4.v201212120619.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.datatools.modelbase.sql_1.0.6.v201208230744.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.emf.common_2.10.1.v20140901-1043.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.emf.ecore.change_2.10.0.v20140901-1043.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.emf.ecore.xmi_2.10.1.v20140901-1043.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.emf.ecore_2.10.1.v20140901-1043.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.emf_2.6.0.v20140901-1055.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.equinox.app_1.3.200.v20130910-1609.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.equinox.preferences_3.5.200.v20140224-1527.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.equinox.registry_3.5.400.v20140428-1507.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.orbit.mongodb_2.10.1.v20130422-1135.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.osgi.services_3.4.0.v20140312-2051.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.osgi_3.10.1.v20140909-1633.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.eclipse.update.configurator_3.3.300.v20140518-1928.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.w3c.css.sac_1.3.0.v200805290154.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.w3c.dom.smil_1.0.0.v200806040011.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/org.w3c.dom.svg_1.1.0.v201011041433.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/oro-2.0.8.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/oscache-2.4.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/pager-taglib-2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/play_s50408.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jwplayer/player.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/plusoft.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/poi-3.7-20101029.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/preload.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/quartz-1.8.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/saaj.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/search_left_s50407.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/search_right_s50407.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/slf4j-api-1.6.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/slf4j-log4j12-1.6.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/slider.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/slider_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/small_head_s50407.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/small_tx_s50408.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/small_zwt_s50408.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/sort_asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/sort_asc_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/sort_both.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/sort_desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/sort_desc_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/spinner_arrows.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-aop-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-asm-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-aspects-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-beans-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-context-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-context-support-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-core-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-expression-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-jdbc-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-orm-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-oxm-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-struts-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-test-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-tx-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-web-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-webmvc-3.0.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/stars_ban_s50408.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/stars_big_h_s50410.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/stars_big_s50410.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/stars_gary_s50408.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/stars_h_s50408.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/stripes-1.5.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/images/success.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/tcy_bg_s50413.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/layer/skin/default/textbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/tianjiaxiaoren5416_03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/tianjiaxiaorenbg5416_03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/tianjiaxiaorenred5416_03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/toggle-subnav-down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/toggle-subnav-up-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/toolbar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/transp50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/img/twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/unpublished_s50413.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/upload_fmtp_s50415.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/upload_logo_s50415.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/upload_s50415.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/urlrewritefilter-3.1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/velocity-1.6.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/video_zwt_s50408.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/video_zwt_s50409.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/viewservlets.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/webservices-api.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/webservices-extra-api.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/webservices-extra.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/webservices-rt.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/wsdl4j-1.6.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/wwczy_s50417.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/xfire-all-1.2.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/xiugaiqianbi5416_03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/xmemcached-1.4.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/xmlschema-core-2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/layer/skin/default/xubox_ico0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/layer/skin/default/xubox_loading0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/layer/skin/default/xubox_loading1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/layer/skin/default/xubox_loading2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/xwork-core-2.3.15.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/yzm.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/zhengsanjiao5416_03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/zwt_122x122_s50408.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/img/zzt_s50415.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/demo/1.13.0-demo.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/demo/1.13.0-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/demo/2.6.4-demo.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/demo/2.6.4-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/learning/springJUnit4/AbastractSpringJUnit4Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/Admin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/AdminAnswer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/myHomeWork/bean/AdminAnswerBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/AdminAnswerMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/AdminFavorite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/AdminFavoriteMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/AdminMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/AdminStudy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/AdminStudyMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/applicationContext/ApplicationContextHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/learning/springJUnit4/ApplicationContextTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/dao/BaseDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/base/BaseResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/service/BaseService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/Bind.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/BindMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/action/CaptchaImageAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/ClassUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/CommonServiceUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/CommonUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/mybatis/ConfigBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/ConstantsUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/CookieUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/Courses.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/CoursesMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/DESEDEEncryptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/mybatis/DataSourceContextHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/DateUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/Department.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/DepartmentMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/DictionaryCacheKeys.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/DictionaryServiceUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/mybatis/DynamicDataSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/DynamicLoadingFileUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/excel/ExcelParseMain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/excel/ExportExcelProcessMain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/FileMainUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/FileNameException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/FileUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/freemarker/FreemarkerServletFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/GsonUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/common/HashMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/HtmlParserForKingEditor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/HtmlTemplateParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/HttpRequestUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/ImageUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/excel/ImportExcelProcessMain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/statistics/IndexStatistics.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/JSONUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jwplayer/JWPlayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/LanqiaoConstants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/LoggerUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/action/LoginAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/customSqlMapper/LoginActionMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/login/LoginBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/filter/LoginFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/inteceptor/LoginInteceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/service/impl/LoginService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/MD5FileUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/MailSender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/MailSenderInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/viewResolver/MixedViewResolver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/action/MyHomeWorkAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/myHomeWork/MyHomeWorkAnswer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/service/impl/MyHomeWorkService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/MyTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/NullUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/NumberUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/PageInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/PagingUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/PdfParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/Position.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/PositionMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/RandomNumber.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/base/ResultCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/Role.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/RoleMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/exception/RollBackException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/mybatis/RunEnvironmentConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/SecretUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/ServiceLocator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/action/StatisticsAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/service/impl/StatisticsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/statistics/StatisticsSubjectUploadBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/action/SubjectAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/Subject/SubjectBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/action/SubjectLearningAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/subjectLearning/SubjectLearningBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/customSqlMapper/SubjectLearningExtMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/subjectLearning/SubjectLearningListBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/service/impl/SubjectLearningService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/Subject/SubjectListBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/action/SubjectManageAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/service/impl/SubjectManageService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/SubjectRate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/SubjectRateMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/service/impl/SubjectService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/customSqlMapper/SubjectSqlMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/myHomeWork/SubjectVideHomeAnswer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/Subjects.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/SubjectsMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/SystemFunction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/SystemFunctionMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/learning/serviceTest/TestServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/UDPCommandClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/UniqueGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/Unzipper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/Subject/UpdateSubjectPageBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/action/UploadAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/UploadFileConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/UploadFileUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/UserBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/VerifyUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/Video.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/Subject/VideoBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/myHomeWork/bean/VideoBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/customSqlMapper/VideoHomeWorkExtMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/VideoHomework.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/VideoHomeworkMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/action/VideoLearningAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/videoLearning/VideoLearningBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/customSqlMapper/VideoLearningExtMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/service/impl/VideoLearningService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/VideoMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/entity/VideoNote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/subjectLearning/VideoNoteBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/subjectLearning/VideoNoteListBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/generateSqlMapper/VideoNoteMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/skin/WdatePicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/WdatePicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/web/util/Zipper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/accept.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/additional-methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/additional-methods.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/additional.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/ajaxfileupload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/alphanumeric.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/spring/applicationContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/aria.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/bankaccountNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/bankorgiroaccountNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/bic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/personal/bjzl_tab_control.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/bottom.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/cifES.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/cihongchang.application.config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/common/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/common/commontools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/creditcardtypes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/currency.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/spring/dataSourceContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/dateFA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/dateITA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/dateNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/skin/default/datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/skin/whyGreen/datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/delegate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/demo.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/dingdapeng.application.config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/demo/dynamic-loading-demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/dynamic-loading-files.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/dynamic-loading-files.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/e-learning.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/personal/editinfo.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/error-placement.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/extension.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/common/fileUploadFrame.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/subject/finishedSubject.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/css/footer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/css/fullcalendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/fullcalendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/css/fullcalendar.print.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/statistics/getdate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/giroaccountNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/guoq.application.config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/css/header.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/iban.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/integer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/ipv4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/ipv6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-1.8.0/jquery-1.8.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-1.8.0/jquery-1.8.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-loading/jquery-loading-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/css/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/jquery.form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-loading/jquery.loading.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-loading/jquery.loading.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-1.8.0/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/jquery.mockjax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/jquery.simulate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/jquery.validate.allRules.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/jquery.validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/css/jquery.validate.tip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-cz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-pt_BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-se.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-zh_CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/languages/jquery.validationEngine-zh_TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/jquery.validationEngine.allRules.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/src/jquery.validationEngine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/layer/skin/layer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/layer/skin/layer.ext.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/layer/extend/layer.ext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/layer/layer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/lettersonly.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/letterswithbasicpunc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/localhost.application.config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/login.filter.application.config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/login/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/lunar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/messages.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_bg.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ca.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_cs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_da.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_de.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_el.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_es.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_es_AR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_es_AR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_et.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_eu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_fa.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_fi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_fr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_gl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_he.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_hr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_hu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_id.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_is.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_it.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ja.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ka.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_kk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_kk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ko.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_lt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_lv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_my.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_nl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_no.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_pl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_pt_BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_pt_BR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_pt_PT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_pt_PT.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ro.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_ru.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_si.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_sk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_sl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_sr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_sr_lat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_sr_lat.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_sv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_th.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_tj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_tj.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_tr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_uk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_vi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_zh.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_zh_TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/messages_zh_TW.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/methods_de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/methods_de.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/methods_es_CL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/methods_es_CL.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/methods_fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/methods_fi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/methods_nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/methods_nl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/methods_pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/localization/methods_pt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/mobileNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/mobileUK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/morris.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/homeWork/myHomeWork.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/homeWork/myHomeWorkAnswer.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/mybatis-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/nieES.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/nifES.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/normalLeft.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/nowhitespace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/online.application.config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/common/pageno_javascript.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/common/pagesHtml.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/pattern.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/phoneNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/phoneUK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/phoneUS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/phonesUK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/postalCodeCA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/postalcodeIT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/postalcodeNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/postcodeUK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/css/public.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/css/public_button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/css/public_paging.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/qunit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/qunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/raphael-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/require_from_group.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/rules.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/skip_or_fill_minimum.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/spring-myHomeWorkService.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/spring-statisticsService.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/spring-subjectLearningService.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/spring-subjectManageService.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/spring-subjectService.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/spring-userService.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service/spring-videoLearningService.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/action/springmvc-captchaImageAction.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/action/springmvc-dispatcher-servlet.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/action/springmvc-loginAction.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/action/springmvc-myHomeWorkAction.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/action/springmvc-statisticsAction.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/action/springmvc-subjectAction.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/action/springmvc-subjectLearningAction.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/action/springmvc-subjectManageAction.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/action/springmvc-uploadAction.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/action/springmvc-videoLearningAction.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/statesUS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis/sqlMapper/customSqlMapper/statisticsActionMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/statistics/statisticsDemo.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/strippedminlength.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/fullcalendar/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/subject/subject.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/subjectlearn/subjectLearning.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/subjectlearn/subjectLearningFavorite.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/subjectlearn/subjectLearningFinished.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/subjectManage/subjectManage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/elearning/bean/output/subjectManage/subjectManageBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/test-session-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/test.application.config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/src/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/time.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/time12h.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/top.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/subject/updateSubject.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/url2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validation-engine-2.6.4/css/validationEngine.jquery.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/subjectlearn/videoLearning.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/vinUS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/xiaobai.application.config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/xinwenfeng.application.config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/My97DatePicker/lang/zh-tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/zipcodeUS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/webstatic/js/jquery-validate-1.13.0/additional/ziprange.js" />
+    </list>
+    <ignored path="e-learning.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/build/classes/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="e-learning" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Alice" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Alice\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92162797-2d1f-4475-9608-3c0b88f44913" name="Default" comment="" />
+      <created>1432521495012</created>
+      <option name="number" value="Default" />
+      <updated>1432521495012</updated>
+      <workItem from="1432521497534" duration="155000" />
+      <workItem from="1432521697128" duration="1197000" />
+    </task>
+    <task id="LOCAL-00001" summary=" 创建项目">
+      <created>1432522339380</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1432522339380</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1352000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=" 创建项目" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 创建项目" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>
